@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CBMERJ</title>
+    <title>Cronograma CBMERJ</title>
 
     <!-- Fonte -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -57,140 +57,95 @@
         <button onclick="clearAll()" style="margin-left: 10px;">Limpar Tudo</button>
     </div>
 
-    <!-- ===== SEMANA 1 ===== -->
+    <h1>Cronograma CBMERJ – 6 Meses</h1>
 
-    <div class="week">
-        <h2>Semana 1</h2>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Segunda</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Terça</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Quarta</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Quinta</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Sexta</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Sábado</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Domingo</span>
-            </div>
-            <div class="details">simulado + redação</div>
-        </div>
-    </div> 
-    <!-- ===== SEMANA 2 ===== -->
 
-    <div class="week">
-        <h2>Semana 2</h2>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Segunda</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Terça</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Quarta</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Quinta</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Sexta</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Sábado</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Domingo</span></div>
-            <div class="details">simulado + redação</div>
-        </div>
-    </div> 
+    <script>
+        const meses = [
+            { nome: 'Mês 1', cor: '#e63946' },
+            { nome: 'Mês 2', cor: '#e63946' },
+            { nome: 'Mês 3', cor: '#e63946' },
+            { nome: 'Mês 4', cor: '#e63946' },
+            { nome: 'Mês 5', cor: '#e63946' },
+            { nome: 'Mês 6', cor: '#e63946' }
+        ];
 
-    <!-- ===== SEMANA 3 ===== -->
 
-    <div class="week">
-        <h2>Semana 3</h2>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Segunda</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Terça</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Quarta</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Quinta</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Sexta</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Sábado</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Domingo</span></div>
-            <div class="details">simulado + redação</div>
-        </div>
-    </div> 
-    <!-- ===== SEMANA 4 ===== -->
+        const diasSemana = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'];
 
-    <div class="week">
-        <h2>Semana 4</h2>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Segunda</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Terça</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Quarta</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Quinta</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Sexta</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Sábado</span></div>
-            <div class="details">45 min teoria • 1h15 questões</div>
-        </div>
-        <div class="day">
-            <div class="checkbox-wrapper"><input type="checkbox"><span class="subject">Domingo</span></div>
-            <div class="details">simulado + redação</div>
-        </div>
-    </div>
+
+        const conteudos = {
+            'Mês 1': {
+                'Segunda': ['Matemática: Noções de Conjuntos', 'Física: Álgebra para Física', 'Português: Ortografia e Acentuação'],
+                'Terça': ['Matemática: Conjuntos Numéricos', 'Física: Vetores', 'Química: Introdução, Misturas'],
+                'Quarta': ['Matemática: Razão, Proporção e Porcentagem', 'Física: MRU / MRUV', 'Biologia: Química da Vida, Membrana + Citoplasma'],
+                'Quinta': ['Matemática: Funções – Introdução', 'História: Idade Moderna parte 1 e 2'],
+                'Sexta': ['Geografia: Orientação, Estrutura da Terra, Clima', 'Redação: Estrutura do texto (introdução–desenvolvimento–conclusão)'],
+                'Sábado': ['Revisão das matérias da semana', 'Questões práticas'],
+                'Domingo': ['Simulado + Redação']
+            },
+            'Mês 2': {
+                'Segunda': ['Matemática: Função Afim', 'Física: Dinâmica, Atrito'],
+                'Terça': ['Matemática: Função Quadrática', 'Física: Resultante centrípeta, Trabalho, energia e potência'],
+                'Quarta': ['Química: Tabela periódica, Ligações químicas, Funções inorgânicas'],
+                'Quinta': ['Biologia: Núcleo / Expressão Gênica, Metabolismo, Ciclo celular'],
+                'Sexta': ['Geografia: Atmosfera do Brasil, Vegetação, Domínios naturais'],
+                'Sábado': ['História: Idade Moderna parte 3, Brasil Colônia I', 'Português: Função sintática do período simples, Pronomes / verbos'],
+                'Domingo': ['Redação: Argumentação + coerência']
+            },
+            'Mês 3': {
+                'Segunda': ['Matemática: Exponencial, Logaritmo, Modular', 'Física: Choques e QDM'],
+                'Terça': ['Matemática: Múltiplos e divisores', 'Física: Gravitação, Hidrostática'],
+                'Quarta': ['Física: Termometria e calorimetria', 'Química: Reações, Estequiometria, Oxirredução'],
+                'Quinta': ['Biologia: Fisiologia Humana I e II, Histologia'],
+                'Sexta': ['Geografia: Hidrografia, Meio ambiente / problemas ambientais'],
+                'Sábado': ['História: Período Joanino, Independência / Primeiro Reinado', 'Português: Sintaxe do período composto, Concordância'],
+                'Domingo': ['Redação: Construção de texto coeso']
+            },
+            'Mês 4': {
+                'Segunda': ['Matemática: Sequências e progressões, Números complexos, Polinômios, Matrizes / determinantes'],
+                'Terça': ['Geometria: Geometria plana, Triângulos, Círculo, Áreas'],
+                'Quarta': ['Física: Termodinâmica, Óptica, Ondas'],
+                'Quinta': ['Química: Termoquímica, Cinética, Equilíbrio químico'],
+                'Sexta': ['Biologia: Reino Plantae, Reino Animal (invertebrados e vertebrados)'],
+                'Sábado': ['História: Segundo Reinado, Primeira República', 'Português: Crase, Regência'],
+                'Domingo': ['Redação: Prática de temas (1 redação semanal)']
+            },
+            'Mês 5': {
+                'Segunda': ['Matemática: Probabilidade, Análise combinatória, Binômio de Newton, Geometria Analítica I e II'],
+                'Terça': ['Física: Eletrostática I e II, Eletrodinâmica, Eletromagnetismo'],
+                'Quarta': ['Química: Orgânica I – Hidrocarbonetos, Funções oxigenadas, Funções nitrogenadas'],
+                'Quinta': ['Biologia: Genética, Evolução, Ecologia I, II e III'],
+                'Sexta': ['História: Era Vargas, Segunda Guerra, Guerra Fria', 'Geografia: População, Urbanização, Comércio mundial / Brasil'],
+                'Sábado': ['Redação: Análise de redações modelos'],
+                'Domingo': ['Simulado + Redação']
+            },
+            'Mês 6': {
+                'Segunda': ['Revisão completa de Matemática'],
+                'Terça': ['Revisão de Física: Mecânica, Termodinâmica e Eletro'],
+                'Quarta': ['Revisão de Português + Redação'],
+                'Quinta': ['Revisão de Química Geral e Orgânica'],
+                'Sexta': ['Revisão de História, Geografia e Biologia'],
+                'Sábado': ['Revisão completa das matérias e questões de concursos anteriores'],
+                'Domingo': ['Simulado completo + Revisão 24h + Revisão final (mapas mentais)']
+            }
+        };
+
+
+        meses.forEach((mesObj, i) => {
+            const mesNome = mesObj.nome;
+            document.write(`<h1 style='margin-top:40px; color:${mesObj.cor};'>${mesNome}</h1>`);
+            for (let s = 1; s <= 4; s++) {
+                let semanaNumero = i * 4 + s;
+                document.write(`<div class='week'><h2>Semana ${semanaNumero}</h2>`);
+                diasSemana.forEach(dia => {
+                    document.write(`<div class='day'><div class='checkbox-wrapper'><input type='checkbox'><span class='subject'>${dia}</span></div>`);
+                    document.write(`<div class='details'>${conteudos[mesNome][dia].join(' • ')}</div></div>`);
+                });
+                document.write(`</div>`);
+            }
+        });
+    </script>
 
     <!-- GRÁFICO -->
     <div class="chart-container">
@@ -203,4 +158,3 @@
 </body>
 
 </html>
-
