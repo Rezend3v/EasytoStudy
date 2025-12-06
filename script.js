@@ -8,6 +8,10 @@ if (localStorage.getItem("theme") === "light") {
     document.body.classList.add("light");
 }
 
+function openExternalLink() {
+        window.open('https://militares.estrategia.com/mesa-de-estudo', '_blank');
+}
+
 // Checkboxes
 const checkboxes = document.querySelectorAll("input[type='checkbox']");
 const dayCards = document.querySelectorAll(".day");
